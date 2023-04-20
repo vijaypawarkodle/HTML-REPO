@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+  .top-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(61, 66, 104);
+        height: 100px;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+    }
+
+    .input {
+        align-items: center;
+        width: 400px;
+        background-color: aliceblue;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .top-header-left {
+        padding: 50px 20px;
+    }
+
+    .top-header-right {
+        padding: 20px 20px;
+    }
+
+    #just {
+        color: aliceblue;
+        font-size: 30px;
+    }
+
+    #button1 {
+        color: rgb(255, 252, 252);
+        background-color: red;
+        padding: 7px;
+        margin: 5px;
+    }
+
+    select {
+        padding: 7px;
+        margin: 5px;
+    }
+
+    .top-header1 {
+        background-color: rgb(34, 35, 35);
+        display: flex;
+        color: aliceblue;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+
+    }
+
+    .top-header1 span {
+        margin-left: 20px;
+        font-size: 11px;
+        font-family: arial;
+    }
+
+    .section-card {
+        display: flex;
+        padding: 10px;
+        margin: 50px;
+        width: 90%;
+    }
+
+    .card {
+        padding: 10px;
+        margin: 10px;
+    }
+
+
+        footer {
+            height: 2000px;
+            background-color: rgb(51, 50, 50);
+        }
+
+        .top-title1 dl {
+            margin: 0px 150px 0px 150px;
+            text-align: left;
+        }
+
+        .top-title1 {
+            margin-top: 70px;
+        }
+
+        .top-title dt {
+            color: rgb(197, 200, 202);
+            font-size: 12px;
+            word-spacing: 2px;
+            padding: 8px;
+            font-family: arial;
+        }
+
+        .top-title dd {
+            color: rgb(191, 191, 191);
+            font-size: 10px;
+            margin-left: -8px;
+            padding: 15px;
+            word-spacing: 2px;
+            font-family: arial;
+            line-height: 15px;
+        }
+
+        footer div span {
+            padding: 10px;
+
+            border: 1px double black;
+            border-radius: 50%;
+            background-color: rgb(116, 116, 116);
+            align-items: center;
+            justify-content: center;
+            display: inline;
+            transition: 1s;
+        }
+
+        legend span:hover {
+            color: rgb(30, 30, 30);
+
+            cursor: grab;
+            transition: 1s;
+            background-color: rgb(247, 246, 246);
+        }
+
+        legend {
+            text-align: center;
+            padding: 20px;
+        }
+
+        fieldset {
+
+            width: 1350px;
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        legend p {
+            color: aliceblue;
+            font-size: 11px;
+            line-height: 5px;
+        }
+
+        button {
+            background-color: tomato;
+            color: aliceblue;
+            width: 200px;
+            height: 50px;
+        }
+
+        .top-title2 {
+            color: aliceblue;
+            padding: 20px;
+            margin: 0px 80px 0px 140px;
+        }
+
+        .top-title3 {
+            color: aliceblue;
+            padding: 20px;
+            background-color: rgb(104, 102, 101);
+            padding: 5px;
+            height: 150px;
+            margin: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title-icon1 {
+            color: rgb(111, 105, 105);
+            font-size: 60px;
+            border-radius: 0px;
+            color: aliceblue;
+        }
+
+        .top-title3 div div {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="top-header-left">
+                <img src="../../public/ASSETS/logo book my show.jpg" height="35px" width="120px" alt=""> <input
+                    type="text" class="input" width="200px"
+                    placeholder="Serch for movies Event And plays Sports and activity">
+            </div>
+            <div class="top-header-right">
+                <span><select name="" id="">
+                        <option>Mumbai</option>
+                        <option value="">delhi</option>
+                        <option value="">hyd</option>
+                        <option value="">betul</option>
+                        <option value="">bhopal</option>
+                        <option value="">telangan</option>
+                    </select></span>
+                <span> <button id="button1">Signin</button> </span>
+                <span class="bi bi-justify" id="just"></span>
+
+            </div>
+        </div>
+        <div class="top-header1">
+            <div>
+                <span>HOME</span>
+                <span>STREAM</span>
+                <span>EVENT</span>
+                <span>PLAY</span>
+                <span>SPORTS</span>
+                <span>ACTIVITY</span>
+                <span>BUZZ</span>
+            </div>
+            <div>
+                <span>listYourShow</span>
+                <span>Corporates</span>
+                <span>offer</span>
+                <span>Gift-card</span>
+
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="section-card">
+            <div class="card">
+                <div>
+                    <img src="../ASSETS/bms4.jpg" alt="">
+                </div>
+                <div>
+                    <span class="bi bi-star-fill"><b>5.1/10 4.5k votes</b></span><br><br>
+                    <b>salaam venky</b><br>
+                    <p>Druma/family</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="../ASSETS/bms5.jpg" alt="">
+                </div>
+                <div>
+                    <span class="bi bi-star-fill"><b>5.1/10 4.5k votes</b></span><br><br>
+                    <b>maarrich</b><br>
+                    <p>Crime/mysrty/thriller</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="../ASSETS/bms6.jpg" alt="">
+                </div>
+                <div>
+                    <span class="bi bi-star-fill"><b>5.1/10 4.5k votes</b></span><br><br>
+                    <b>Avatar</b><br>
+                    <p>Action/Adventure</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="../ASSETS/bms7.jpg" alt="">
+                </div>
+                <div>
+                    <span class="bi bi-star-fill"><b>5.1/10 4.5k votes</b></span><br><br>
+                    <b>Drishyam-</b><br>
+                    <p>Druma/family</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="top-title2">
+            <span class="bi bi-aspect-ratio-fill"></span>&nbsp;
+            <b>List You Show :</b> Got a show Even Activity or a Great Experiance? Partner with us & Get list on book my
+            show
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button>Contact Today!</button>
+        </div>
+        <div class="top-title3">
+            <div>
+                <div class="title-icon1">
+                    <span class="bi bi-inbox"></span>
+                </div>
+                <div>
+                    24/7 Customer Service
+                </div>
+            </div>
+            <div>
+                <div class="title-icon1">
+                    <span class="bi bi-cloud-snow-fill"></span>
+                </div>
+                <div>
+                    Resand booking confirmation
+                </div>
+            </div>
+            <div>
+                <div class="title-icon1">
+                    <span class="bi bi-1-square-fill"></span>
+                </div>
+                <div>
+                    Subscribe to the news letter
+                </div>
+            </div>
+        </div>
+        <div class="top-title1">
+            <dl class="top-title">
+                <dt>UPCOMING MOVIES IN MUMBAI</dt>
+                <dd>Hathi Thala | Long Drive Niganatrie | Midals Midtna - Tishmani Aksha hond Chacha
+                    Exata Ajay
+                    WanthaichoitwTertipec(Kannada) Gaver u Turt 2 shantino tiwa Shankara | Je Tere Naal
+                    Pyar Na
+                    txanda:
+                    ( Pasivadi Hrunam The Good Mananja | Anni Marichi Sakunamote | Lathithi || Kavga
+                </dd>
+                <dt>MOVIES BY GENRE</dt>
+                <dd>Dan Movies The Moms Rction Modes Comedy Moves Movies Movies Romantic Moyes thogray
+                    Moves
+                    Sports
+                    Movies Mystery Moves Classic Movies Fancy Movies soming Movies Animation Movies
+                    Musical
+                    Movies
+                    Adaptation Movies Adult Movies Devotional Movies Mythological Movies | Nair Movies
+                    Period
+                    Movies
+                    Political Milesupernatul Movies Movies Movies uripette Movits | Humorical Monina
+                    Tragedy
+                    Movies |
+                    Anime Movies | Horor Movies | Paychological ones War Movies Bollywood Movies
+                </dd>
+                <dt>MOVIES BY LANGUAGE</dt>
+                <dd>
+                    Mokes In Hindi Movies English Mesin Mateyalam Movies in Tam Movies in Kannada Movies
+                    Marathon Me
+                    Aves in Chatting Mass French Mesin Portuguese Movies in Khas Merk Modes in Sindhu
+                    Movies in
+                    Rapathari Movies in Urdu |Movies in Nepali Movin infipart Movies in English 70 Mones
+                    is
+                    Haryana
+                    Mostes i Dda Movies in Japanese Mortes y Tulu Movies Purgat Movers in Beng Movies in
+                    Asta
+                </dd>
+                <dt>PLAYS BY GENRE IN MUMBAI</dt>
+                <dd>DE Plays Comedy Plays The Play Musical Play Plays | Fantasy Plilys | Home | Action
+                    Plays
+                    Plays
+                    Contemporary Plant PaysPlays Biography Plays Kaluk #ays || Mythological Fog | Noir
+                    Play |
+                    Ontine
+                    reaming Playa Playa 1. Permud Plays | Political Plays | Tibute: Plays | SciFlags
+                    Regional
+                    Play Playe
+                    Hstorical Plays Tragedy Plates Horner Plays Frychological Plays Was Playa | Mystery
+                    Play's
+                </dd>
+                <dt>MOVIE REVIEWS AND TRENDING ARTICLES</dt>
+                <dd>Trending Article | Latest News on Mtives, Events, Plays and diports | Movie
+                    Celebrities
+                    ||Bailers=
+                </dd>
+                <dt>MOVIE UPDATES AND CELEBRITIES</dt>
+                <dd>Upong Movers Movies Now Showing Move Celebs</dd>
+                <dt>THINGS TO DO IN MUMBAI</dt>
+                <dd>Averie Attent Parks | Ferrate | Durga FeFood and How Faces | Antiques, Heritage.
+                    Museums |
+                    Chostman
+                    Genetratiome Valentines Diy Gempranons Hilia Festival Gaming (hospitati | Pola
+                    nonnáth
+                    Festival ||
+                    Parties) Ungor Tours | Naira (Quites and compemons Shope and Mats Tourt Attractions
+                    Monument
+                </dd>
+                <dt>SPORTS EVENTS IN MUMBAI</dt>
+                <dd>Online Games Esports Football Kata Cycling At Archery barn | Chess Goft Rickbong Bar
+                    Race
+                    Boxing
+                    Card Game Cricket by Horse Race Med Maral Arts Coline Sports Mary That Swimming Pool
+                    Baghy
+                    Hockey |
+                    ce Skating Jution sports willing Sheeting | The Wresting Suling Snooker Basketball
+                    Bowling
+                    Pok |
+                    Volleyball Table Terms Weight Lang</dd>
+                <dt>EVENTS IN MUMBAI</dt>
+                <dd>Comedy Showo Wolkshops Music Shows New Year Parties Exig Meetupsully Talks Beer
+                    Festival
+                    Conferences
+                    Celebrity Westies Award shows Diline Streating Events Vaccinaties</dd>
+                <dt>CINEMAS IN TOP CITIES</dt>
+                <dd>Cinemas in Miamidali ||Chetas in Delhi-NCR | Cinertiae in Chennal Cinemas in
+                    Bengaluru |
+                    Cinemas in
+                    Hyderabad (Ces in Pune Cinemas in Ahmedabad Cinemas in Kotteri Köchi
+                </dd>
+                <dt>EVENTS IN TOP CITIES</dt>
+                <dd>Everita in Martibai | Events in Delhi NCR | Events in Chennai Events in Bengaluru |
+                    Events
+                    in
+                    Hyderabad | Events in Pune Eventa in Ahmedabad | Events in Kolkata Events in Kochi
+                </dd>
+                <dt>PLAYS IN TOP CITIES</dt>
+                <dd>Plays in Mumbai | Plays in Delhi-NOR Plays in Chennai | Plays in Bengaluru Plays in
+                    tyderabad |
+                    Plays in Pune Plays in Ahmedabad Plays in Kola Plays in Kochi
+                </dd>
+                <dt>ACTIVITIES IN TOP CITIES</dt>
+                <dd>Things to do in Mumbai Things to do in Den-NCR Things to do in Chennal Things to do
+                    in
+                    Begatura
+                    Things to do nyadhington Pune Things to do in Ahmedabad Things to do in Kolkata
+                    Things to do
+                    in
+                    Kochi</dd>
+                <dt>MOVIES IN TOP CITIES</dt>
+                <dd>Movies in Mumbai | Movies in Delhi-NCR Movies in Cheras Moves in Bengala Mayes in
+                    Hyderabad
+                    Movies
+                    in Fame Movies to Amedabad Movies Moved in Kach</dd>
+                <dt>COUNTRIES</dt>
+                <dd>Singapore UAE Lanka West Indies</dd>
+                <dt>HELP</dt>
+                <dd>About the Contact Us Current Opening Press Release Press Coverage | Spermap | FAQs |
+                    Terms
+                    and
+                    Condmons | Privacy Policy</dd>
+                <dt>BOOKMYSHOW EXCLUSIVES</dt>
+                <dd>Lollapaitaas indio | Superstar BookSmile Corporate Vouchers Gift Cards | Lit My Show
+                    Offers
+                    Stream |
+                    Buzz | Trabers</dd>
+
+            </dl>
+        </div>
+        <div>
+            <fieldset>
+                <legend> <IMG src="../../public/ASSETS/logo book my show.jpg"></IMG></legend>
+                <legend><span class="bi bi-facebook"></span>
+                    <span class="bi bi-youtube"></span>
+                    <span class="bi bi-google"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-pinterest"></span>
+                </legend>
+                <legend>
+                    <p> copyright 2022 &copy Bigtree Entertainment pvt. Ltd. All right reserved</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab fugiat,
+                        minus ex
+                        voluptate
+                        odio alias maiores eos sequi atque nihil delectus aliquid incidunt odit tempore
+                        quibusdam quas.
+                        Consequuntur accusantium quae deserunt! Sint enim numquam, repudiandae sunt
+                        voluptates
+                        minus
+                    </p>
+                    <p>prepared vijay kumar pawar.</p>
+                </legend>
+            </fieldset>
+        </div>
+    </footer>
+
+</body>
+
+</html>
